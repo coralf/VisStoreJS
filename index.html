@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绵阳餐饮数据可视化分析</title>
+    <link rel="stylesheet" href="/public/css/index.css">
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=2.0&ak=C7PC8Ctf8eaFrf77fSXOnERB4VLq6VCM"></script>
+    <script type="text/javascript" src="/public/lib/jquery.js"></script>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/Heatmap/2.0/src/Heatmap_min.js"></script>
+    <script type="text/javascript" src="/public/lib/echarts/echarts.min.js"></script>
+    <script type="text/javascript" src="/public/data/chartsData.js"></script>
+    <script type="text/javascript" src="/public/data/stores.js"></script>
+    <script type="text/javascript" src="/public/js/index.js"></script>
+</head>
+<body>
+<div class="left_layout">
+    <div id="pie" class="box_style"></div>
+    <div id="hit" class="box_style"> </div>
+</div>
+<div class="right_layout">
+    <div class="right_top">
+        <div id="all_store">
+            <div class="circ">
+                <div>0</div>
+            </div>
+            <div class="tx">门店</div>
+        </div>
+        <div id="hot_plot_count" class="litter_cir">
+            <div class="circ">
+                <div>0</div>
+            </div>
+            <div class="tx">火锅</div>
+        </div>
+
+        <div id="sccuisine" class="litter_cir">
+            <div class="circ">
+                <div>0</div>
+            </div>
+            <div class="tx">川菜</div>
+        </div>
+        <div id="snack" class="litter_cir">
+            <div class="circ">
+                <div>0</div>
+            </div>
+            <div class="tx">小吃</div>
+        </div>
+
+        <div id="dessert" class="litter_cir">
+            <div class="circ">
+                <div>0</div>
+            </div>
+            <div class="tx">面包</div>
+        </div>
+
+        <div id="fast_food" class="litter_cir">
+            <div class="circ">
+                <div>0</div>
+            </div>
+            <div class="tx">快餐</div>
+        </div>
+
+        <div id="other" class="litter_cir">
+            <div class="circ">
+                <div>0</div>
+            </div>
+            <div class="tx">其他</div>
+        </div>
+    </div>
+    <div class="map_container">
+        <div id="map"></div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
